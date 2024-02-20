@@ -15,14 +15,12 @@ public class FirstDay {
 //          System.out.println(sum);
 
 //        INPUT IN JAVA
-          Scanner sc = new Scanner(System.in);
-          System.out.println("Please Enter Your Name");
-          
-          String Name = sc.next();
-          
-          System.out.print(Name);
-            
-
+//          Scanner sc = new Scanner(System.in);
+//          System.out.println("Please Enter Your Name");
+//          
+//          String Name = sc.next();
+//          
+//          System.out.print(Name);
 
 
     }
