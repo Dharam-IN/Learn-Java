@@ -26,16 +26,64 @@ public class SecondDay {
 
 //        Conditions Code:-
              
+//             Scanner sc = new Scanner(System.in);
+//             
+//             System.out.println("Please Enter Your age:- ");
+//             int age = sc.nextInt();
+//             
+//             if(age >= 18){
+//                 System.out.println("You Are Adult");
+//             }else{
+//                 System.out.println("You Are Not Adult");
+//             }
+
+//         Odd And Even Number Find Code:-
+             
+//             Scanner sc = new Scanner(System.in);
+//             System.out.println("Please Enter a number:- ");
+//             int val = sc.nextInt();
+//             
+//             if(val % 2 == 0){
+//                 System.out.println(val + " Is Even Number");
+//             }else{
+//                 System.out.println(val + " Is Odd Number");
+//             }
+
+
+//         VALUE CHECK CODE:-
+//             Scanner sc = new Scanner(System.in);
+//             
+//             System.out.print("Please Enter First A Number:- \n");
+//             int a = sc.nextInt();
+//             
+//             System.out.print("Please Enter Second B Number:- \n");
+//             int b = sc.nextInt();
+//             
+//             if(a == b){
+//                 System.out.print("A is Equal to B \n");
+//             }else if(a > b){
+//                 System.out.print("A Is grether B \n");
+//             }else{
+//                 System.out.print("B is Grether A \n");
+//             }
+
+//         SWITCH CASE IN JAVA
              Scanner sc = new Scanner(System.in);
+             int button = sc.nextInt();
              
-             System.out.println("Please Enter Your age:- ");
-             int age = sc.nextInt();
-             
-             if(age >= 18){
-                 System.out.println("You Are Adult");
-             }else{
-                 System.out.println("You Are Not Adult");
+             switch(button){
+                 case 1:
+                     System.out.println("Hello");
+                     break;
+                 case 2:
+                     System.out.println("Namaste");
+                     break;
+                 case 3:
+                     System.out.println("India");
+                 default:
+                     System.out.println("Default Value");
              }
+             
             
 
     }
