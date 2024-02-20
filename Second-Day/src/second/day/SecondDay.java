@@ -68,20 +68,44 @@ public class SecondDay {
 //             }
 
 //         SWITCH CASE IN JAVA
+//             Scanner sc = new Scanner(System.in);
+//             int button = sc.nextInt();
+//             
+//             switch(button){
+//                 case 1:
+//                     System.out.println("Hello");
+//                     break;
+//                 case 2:
+//                     System.out.println("Namaste");
+//                     break;
+//                 case 3:
+//                     System.out.println("India");
+//                 default:
+//                     System.out.println("Default Value");
+//             }
+
+
+//         TASKS
              Scanner sc = new Scanner(System.in);
-             int button = sc.nextInt();
+             System.out.print("Please Enter a First Number for Calculate:- \n");
+             int a = sc.nextInt();
+             System.out.print("Please Enter a Second Number for Calculate:- \n");
+             int b = sc.nextInt();
+             System.out.print("Please Select a Number for Operator like:- \n1 for + \n2 for - \n3 for * \n4 for - \n5 for %");
+             int operator = sc.nextInt();
              
-             switch(button){
-                 case 1:
-                     System.out.println("Hello");
-                     break;
-                 case 2:
-                     System.out.println("Namaste");
-                     break;
-                 case 3:
-                     System.out.println("India");
-                 default:
-                     System.out.println("Default Value");
+             if(operator == 1){
+                 System.out.println(a+b);
+             }else if(operator == 2){
+                 System.out.println(a-b);
+             }else if(operator == 3){
+                 System.out.println(a*b);
+             }else if(operator == 4){
+                 System.out.println(a/b);
+             }else if(operator == 5){
+                 System.out.println(a%b);
+             }else{
+                 System.out.println("Please Enter valid number:- ");
              }
              
             
