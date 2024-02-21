@@ -91,7 +91,7 @@ public class SecondDay {
              int a = sc.nextInt();
              System.out.print("Please Enter a Second Number for Calculate:- \n");
              int b = sc.nextInt();
-             System.out.print("Please Select a Number for Operator like:- \n1 for + \n2 for - \n3 for * \n4 for - \n5 for %");
+             System.out.print("Please Select a Number for Operator like:- \n1 for + \n2 for - \n3 for * \n4 for - \n5 for % \n");
              int operator = sc.nextInt();
              
              if(operator == 1){
@@ -107,8 +107,6 @@ public class SecondDay {
              }else{
                  System.out.println("Please Enter valid number:- ");
              }
-             
-            
 
     }
 }
