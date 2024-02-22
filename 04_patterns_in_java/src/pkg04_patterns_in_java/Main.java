@@ -4,12 +4,26 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        for(int a = 0; a<5; a++){
-            for(int b = 0; b<5; b++){
-                System.out.print(" * ");
+        
+//        BASIC PATTERN
+//        for(int a = 0; a<4; a++){
+//            for(int b = 0; b<5; b++){
+//                System.out.print(" * ");
+//            }
+//            System.out.print("\n");
+//        }
+
+//        HOLLOW RECTANGLE PATTERN
+            for(int row = 1; row <=4; row++){
+                for(int col = 1; col <= 5; col++){
+                    if(row == 1 || col == 1 || row == 4 || col == 5){
+                        System.out.print("*");
+                    }else{
+                        System.out.print(" ");
+                    }
+                }
+                System.out.print("\n");
             }
-            System.out.print("\n");
+                
         }
     }
-    
-}
