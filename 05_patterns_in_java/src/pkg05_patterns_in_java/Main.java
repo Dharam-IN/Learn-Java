@@ -45,10 +45,37 @@ public class Main {
 //            }
 
 //        INVERTED HALF PYRAMID WITH NUMBERS
-            for(int a = 5; a >= 1; a--){
-                for(int b = 1; b<= a; b++){
-                    System.out.print(b);
+//            for(int a = 5; a >= 1; a--){
+//                for(int b = 1; b<= a; b++){
+//                    System.out.print(b);
+//                }
+//                System.out.print("\n");
+//            }
+
+//        FLOYD'S TRINGLE
+//            int val = 1;
+//            
+//            for(int row = 1; row<=5; row++){
+//                for(int col = 1; col<=row; col++){
+//                    System.out.print(val + " ");
+//                    val++;
+//                }
+//                
+//                System.out.print("\n");
+//            }
+
+//         O AND 1 TRINGLE
+            int n = 5;
+            for(int row = 1; row<=n; row++){
+                for(int col = 1; col<=row; col++){
+                    int sum = row + col;
+                    if(sum % 2 == 0){
+                        System.out.print("1 ");
+                    }else{
+                        System.out.print("0 ");
+                    }
                 }
+                
                 System.out.print("\n");
             }
 
