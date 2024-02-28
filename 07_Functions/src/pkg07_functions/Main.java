@@ -1,20 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package pkg07_functions;
 
-/**
- *
- * @author aadi
- */
-public class Main {
+import java.util.*;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Main {
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please Enter a number");
+        int num = sc.nextInt();
+        
+        int store = 1;
+        for(int fac = num; fac >= 1; fac--){
+            store = store * fac;
+        }
+        
+        System.out.println(store);
     }
     
 }
