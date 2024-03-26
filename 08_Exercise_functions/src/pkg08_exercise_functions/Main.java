@@ -72,13 +72,14 @@ public class Main {
     
 //    QUESTION:- Write an infinite loop using do while condition.
     
-    public static void main(String[] args){
-        int a = 1;
-        
-        do{
-            System.out.println(a);
-            a++;
-        }while(a <= 10);
-    }
+//    public static void main(String[] args){
+//        int a = 1;
+//        
+//        do{
+//            System.out.println(a);
+//        }while(a <= 10);
+//    }
+    
+    
     
 }
