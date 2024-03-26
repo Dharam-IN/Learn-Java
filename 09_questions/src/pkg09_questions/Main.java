@@ -4,20 +4,26 @@ import java.util.*;
 
 public class Main{
     public static void main(String args[]){
-//        GET FACTOR OF ANY NUMBER
+//       PRIME NUMBER
             
             Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a number to find its Number Prime or Not:- ");
             
-            System.out.println("Enter any number to find its factor:- ");
             int num = sc.nextInt();
             
-            System.out.println("Factors of " + num + "are:");
-            
-            for(int a = 1; a <= num; a++){
+            boolean isPrime = true;
+            for(int a = 2; a <= Math.sqrt(num); a++){
                 if(num % a == 0){
-                    System.out.println(a);
+                    isPrime = false;
+                    break;
                 }
             }
             
+            if(isPrime){
+                System.out.println("Prime");
+            }else{
+                System.out.println("Not Prime");
+            }
     }
+   
 }
