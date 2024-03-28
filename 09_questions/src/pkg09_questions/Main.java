@@ -3,24 +3,25 @@ package pkg09_questions;
 import java.util.*;
 
 public class Main{
-    
-//    PALINDROME NUMBER
-    
+//    Prime Number Check
     public static void main(String args[]){
-        int num = 121;
-        int originalnum = num;
-        int store;
-        int check = 0;
-        while(num > 0){
-            store = num % 10;
-            check = check * 10 + store;
-            num = num / 10;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any number to check its prime or not");
+        int num = sc.nextInt();
+        
+        boolean condition = true;
+        for(int a = 2; a < num / 2; a++){
+            if(num % a == 0){
+                condition = false;
+                break;
+            }
         }
         
-        if(originalnum == check){
-            System.out.println(originalnum + " Is a Palindrome number");
+        if(condition){
+            System.out.println("Prime Number");
         }else{
-            System.out.println(originalnum + " Is not a Palindrome number");
+            System.out.println("Not Prime");
         }
         
     }
