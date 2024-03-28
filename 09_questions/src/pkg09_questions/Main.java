@@ -3,17 +3,23 @@ package pkg09_questions;
 import java.util.*;
 
 public class Main{
-//     FACTORS
+//    Sum Of Odd numbers from 1 to N
     public static void main(String args[]){
-       Scanner sc = new Scanner(System.in);
-       System.out.println("Enter Any number to get factor:- ");
-       int value = sc.nextInt();
-       
-       System.out.println("Factors of " + value);
-       for(int a = 1; a <= value; a++){
-           if(value % a == 0){
-               System.out.println(a);
-           }
-       }
+        sumodd();
+    }
+    
+    public static void sumodd(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any number to find sum of odd numbers from 1 to n");
+        int num = sc.nextInt();
+        int store = 0;
+        for(int a = 1; a <= num; a++){
+            if(a % 2 != 0){
+                store = store + a;
+            }
+        }
+        
+        System.out.println(store);
+        
     }
 }
