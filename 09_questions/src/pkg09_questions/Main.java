@@ -3,23 +3,25 @@ package pkg09_questions;
 import java.util.*;
 
 public class Main{
-//    Sum Of Odd numbers from 1 to N
+//    Enter 3 numbers from the user & make a function to print their average.
     public static void main(String args[]){
-        sumodd();
+        average();
     }
     
-    public static void sumodd(){
+    public static void average(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Any number to find sum of odd numbers from 1 to n");
-        int num = sc.nextInt();
-        int store = 0;
-        for(int a = 1; a <= num; a++){
-            if(a % 2 != 0){
-                store = store + a;
-            }
-        }
+    
+        System.out.println("Enter User 1 Number:- ");
+        int a = sc.nextInt();
+        System.out.println("Enter User 2 Number:- ");
+        int b = sc.nextInt();
+        System.out.println("Enter User 3 Number:- ");
+        int c = sc.nextInt();
         
-        System.out.println(store);
+        double average = (a + b + c) / 3.0;
         
+        
+        System.out.println("Average of " + a + " " + b + " " + c + " is " + average);
+        System.out.println(average);
     }
 }
