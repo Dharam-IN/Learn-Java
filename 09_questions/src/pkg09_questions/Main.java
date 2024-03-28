@@ -3,26 +3,17 @@ package pkg09_questions;
 import java.util.*;
 
 public class Main{
-//    Prime Number Check
+//     FACTORS
     public static void main(String args[]){
-        
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter any number to check its prime or not");
-        int num = sc.nextInt();
-        
-        boolean condition = true;
-        for(int a = 2; a < num / 2; a++){
-            if(num % a == 0){
-                condition = false;
-                break;
-            }
-        }
-        
-        if(condition){
-            System.out.println("Prime Number");
-        }else{
-            System.out.println("Not Prime");
-        }
-        
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter Any number to get factor:- ");
+       int value = sc.nextInt();
+       
+       System.out.println("Factors of " + value);
+       for(int a = 1; a <= value; a++){
+           if(value % a == 0){
+               System.out.println(a);
+           }
+       }
     }
 }
