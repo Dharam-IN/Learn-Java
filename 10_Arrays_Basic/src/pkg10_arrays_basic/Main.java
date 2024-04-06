@@ -8,13 +8,17 @@ public class Main{
         int[] myarr = {6,3,10,2,9};
         
         int value = myarr[0];
-        for(int a = 0; a < myarr.length; a++){
-            if(value < myarr[a]){
-                value = myarr[a];
+        for(int i = 0; i < myarr.length; i++){
+            for(int j = i; j < myarr.length; j++){
+                if(myarr[i] < myarr[j]){
+                    int temp = myarr[i];
+                    myarr[i] = myarr[j];
+                    myarr[j] = temp;
+                }
             }
         }
         
-        System.out.println(value);
+        System.out.println(myarr[1]);
         
     }
 }
