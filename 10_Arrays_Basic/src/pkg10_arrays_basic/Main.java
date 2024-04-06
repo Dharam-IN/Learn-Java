@@ -3,22 +3,18 @@ import java.util.*;
 
 public class Main{
     public static void main(String[] args){
-//        Descending Order
+//        Find The Second Largest Number in Array
+            
+        int[] myarr = {6,3,10,2,9};
         
-       int[] myarr = {5,3,10,1,2};
-
-       for(int a = 0; a < myarr.length; a++){
-           for(int b = a + 1; b < myarr.length; b++){
-               if(myarr[a] < myarr[b]){
-                   int temp = myarr[a];
-                   myarr[a] = myarr[b];
-                   myarr[b] = temp;
-               }
-           }
-       }
-       
-       for(int a = 0; a < myarr.length; a++){
-           System.out.print(myarr[a] + ", ");
-       }
+        int value = myarr[0];
+        for(int a = 0; a < myarr.length; a++){
+            if(value < myarr[a]){
+                value = myarr[a];
+            }
+        }
+        
+        System.out.println(value);
+        
     }
 }
