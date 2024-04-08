@@ -3,22 +3,28 @@ import java.util.*;
 
 public class Main{
     public static void main(String[] args){
-//        Find The Second Largest Number in Array
-            
-        int[] myarr = {6,3,10,2,9};
+//        Reverse Array
         
-        int value = myarr[0];
+        int[] myarr = {1,2,5,4,6,3,2};
+        
+        System.out.println("Your Array:- ");
         for(int i = 0; i < myarr.length; i++){
-            for(int j = i; j < myarr.length; j++){
-                if(myarr[i] < myarr[j]){
-                    int temp = myarr[i];
-                    myarr[i] = myarr[j];
-                    myarr[j] = temp;
-                }
-            }
+            System.out.print(myarr[i] + ", ");
         }
         
-        System.out.println(myarr[1]);
+        System.out.println("Reverse Array:-");
         
+        int[] newarr = new int[myarr.length];
+        
+        for(int i = 0; i < myarr.length; i++){
+            int temp = myarr.length;
+            newarr[i] = myarr[temp - 1 - i];
+        }
+        
+        for(int i = 0; i < newarr.length; i++){
+            System.out.print(newarr[i] + ", ");
+        }
     }
 }
+
+
