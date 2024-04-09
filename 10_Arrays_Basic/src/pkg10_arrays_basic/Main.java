@@ -19,6 +19,7 @@ public class Main{
             }
         }
         
+        System.out.println("Your matrix(2D) Array");
         for(int i = 0; i < row; i++){
             for(int j = 0; j < col; j++){
                 System.out.print(numbers[i][j] + ", ");
@@ -26,16 +27,17 @@ public class Main{
             System.out.println();
         }
         
-        System.out.println("Enter a number you Want to find that's indeces:- ");
-        int x = sc.nextInt();
+        int temp = numbers[0][0];
         
         for(int i = 0; i < row; i++){
             for(int j = 0; j < col; j++){
-                if(numbers[i][j] == x){
-                    System.out.print(i + ", " + j);
+                if(temp < numbers[i][j]){
+                    temp = numbers[i][j];
                 }
             }
         }
+        
+        System.out.println("Maximum Number in this Array is " +  temp);
     }
 }
 
