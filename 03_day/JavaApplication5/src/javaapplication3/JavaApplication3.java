@@ -49,24 +49,48 @@ public class JavaApplication3 {
 
 //            SWITCH CASE IN JAVA
 
-            System.out.println("Please Choose a Number Between 1 to 3");
+//            System.out.println("Please Choose a Number Between 1 to 3");
+//            
+//            int num = sc.nextInt();
+//            switch(num){
+//                case 1:
+//                    System.err.println("Hello");
+//                    break;
+//                case 2:
+//                    System.err.println("Namaste");
+//                    break;
+//                case 3:
+//                    System.err.println("Bonjour");
+//                    break;
+//                default:
+//                    System.out.println("Bhai aap thode se Dimag se mansik ho mene bola hai ki 1 se 3 ke bich me choose karo");
+//                    break;
+//            }
+
             
-            int num = sc.nextInt();
-            switch(num){
-                case 1:
-                    System.err.println("Hello");
-                    break;
-                case 2:
-                    System.err.println("Namaste");
-                    break;
-                case 3:
-                    System.err.println("Bonjour");
-                    break;
-                default:
-                    System.out.println("Bhai aap thode se Dimag se mansik ho mene bola hai ki 1 se 3 ke bich me choose karo");
-                    break;
-            }
-            
+
+//            SIMPLE CALCULATOR
+                System.out.println("Please Enter Your First Number");
+                int a = sc.nextInt();
+                System.out.println("Please Enter Your Second Number");
+                int b = sc.nextInt();
+                
+                System.out.println("What Do you Want(+, -, *, /, %). if you want + then enter + ");
+                String ope = sc.next();
+                
+                if(ope.equals("+")){
+                    System.out.println(a + b);
+                }else if(ope.equals("-")){
+                    System.out.println(a - b);
+                }else if(ope.equals("*")){
+                    System.out.println(a * b);
+                }else if(ope.equals("/")){
+                    System.out.println(a / b);
+                }else if(ope.equals("%")){
+                    System.out.println(a % b);
+                }else{
+                    System.out.println("Bhai shi Opratore de na kyu faltu me time kharab kar rha hai");
+                }
     }
     
 }
